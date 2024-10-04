@@ -1,7 +1,7 @@
 from http.client import HTTPException
 import motor.motor_asyncio
 
-MONGO_URI = "mongodb://localhost:27017/"
+MONGO_URI = "mongodb://mongo:utec@107.22.167.68:8008/"
 client = motor.motor_asyncio.AsyncIOMotorClient(MONGO_URI)
 database = client.hospital
 collection = database.get_collection("Pacientes")
